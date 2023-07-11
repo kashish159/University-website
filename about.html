@@ -1,0 +1,103 @@
+<!-- html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href ="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+ <!----HOME--->   
+<section class="sub-header">
+    <nav> <!--for logo-->
+        <a href="index.html"><img src="images/pic2.jpg" ></a>
+           <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>          
+    </nav>
+    <h1>ABOUT US</h1>
+
+
+</section>
+
+<!---------about us content------->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+           <h1>We Are The One Of The Largest Universities In The World</h1>
+           <p>The value of service is central to the mission of Greenville as a liberal arts university. It infuses the passions and pursuits of our students, faculty, staff and alumni, and is essential to how Greenvillians serve the public good.The University has reinforced its commitment to helping students and alumni use their educations to not only benefit themselves but also society more broadly. We push students, faculty and alumni to think about how their research, education and lives will benefit the nation, the world and humanity, and give them the support and resources to make it happen.</p>
+           <a href="" class="explore">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/pic13.jpg"> 
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+ <!----FOOTER--->
+<section class="footer">
+       <h4>ABOUT US</h4>
+       <p>Since its founding, GIT has been dedicated to expanding and sharing knowledge, inspiring innovation, and preserving cultural and <br> scientific information for future generations. It engages with people and institutions across the globe in the quest to promote cultural<br> understanding, improve the human condition, delve more deeply into the secrets of the universe, and train the next generation of world leaders.</p>
+       <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <p>MADE BY KASHISH MEHROTRA</p>
+      
+
+       </div>
+</section>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.right = "0";
+    }
+    function hideMenu()
+    {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>

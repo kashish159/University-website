@@ -1,0 +1,148 @@
+<!-- html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href ="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+ <!----HOME--->   
+<section class="sub-header">
+    <nav> <!--for logo-->
+        <a href="index.html"><img src="images/pic2.jpg" ></a>
+           <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>          
+    </nav>
+    <h1>WELCOME TO THE STUDENT BLOG AND CERTIFICATIONS</h1>
+
+
+</section>
+
+
+
+<!------blog page content----->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/pic14.jpg">
+            <h2>Welcome To Our Student Blog</h2>
+            <h3>How the diversified nature of a Computer Science degree has enriched my life</h3>
+            <p>As a BSc Computer Science  student at the University of GIT, I can confidently say that the diversified nature of the programme has really enriched my life and has changed my perspective from a local point of view to a global one.
+                The overall diversified design of the programme's curriculum has provided me with the opportunity to focus on diverse perspectives and varying cultures, which was really amazing to experience.                
+                Throughout my time on the programme, I had the opportunity to work with students from different parts of the world, including Europe, Asia, Africa, and the Americas. I also collaborated with students from different backgrounds for different group projects related to coursework. This has not only helped me understand different cultures and perspectives but has also enabled me to broaden my own horizons, developing a global outlook.</p>
+            <br>
+            <p>Moreover, the faculty members here come from diverse backgrounds, and have added their extensive experience in the field of computer science and bought their unique perspectives and insights into the classroom.
+                This provided me with a well-rounded education which I believe has helped me to shift my vision to fit the global perspective even more. I also had the opportunity to learn from professors who had worked in various parts of the world and  their experiences and knowledge has really helped me a lot.                
+                Diversity within tech is one of the most important aspects of the industry. Including diversity within the degree really encouraged us to embrace diversity and taught us valuable tech skills from a globalised perspective.
+                I can now see the world as a place of endless opportunities and possibilities, and I feel I will be better equipped to navigate the global technology industry once I graduate.</p>
+            <br>
+            <p>To conclude, my programme has really played an important role in enriching my life. Indeed, the curriculum, faculty members, opportunity to work in collaboration with peers from different cultures and the opportunities for interactive learning have all contributed to my personal growth and development.
+                I am looking forward to applying the skills and knowledge gained from this programme to make a positive impact on the world in the near future.</p>    
+            
+
+            <div class="comment-box">
+                <h3>Leave A Comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="comment">POST COMMENT</button>
+                </form>
+            </div>
+
+
+
+
+
+
+        </div>
+        <div class="blog-right">
+            <h3>POST CATEGORIES</h3>
+            <div>
+                <span>Business Analytics</span>                 
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>                 
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>                 
+                <span>15</span>
+            </div>
+            <div>
+                <span>Computer Science</span>                 
+                <span>34</span>
+            </div>
+            <div>
+                <span>Architecture</span>                 
+                <span>22</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!----FOOTER--->
+<section class="footer">
+       <h4>ABOUT US</h4>
+       <p>Since its founding, GIT has been dedicated to expanding and sharing knowledge, inspiring innovation, and preserving cultural and <br> scientific information for future generations. It engages with people and institutions across the globe in the quest to promote cultural<br> understanding, improve the human condition, delve more deeply into the secrets of the universe, and train the next generation of world leaders.</p>
+       <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <p> MADE BY KASHISH MEHROTRA</p>
+      
+         
+       </div>
+</section>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.right = "0";
+    }
+    function hideMenu()
+    {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
